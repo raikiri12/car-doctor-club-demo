@@ -19,7 +19,7 @@
   <link rel="icon" href="assets/mark-lime.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/motion/motion.css">
-  <link rel="stylesheet" href="styles.css?v=inline-mark">
+  <link rel="stylesheet" href="styles.css?v=map-disclosure">
   <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
   <script type="module" src="assets/motion/motion.js"></script>
 </head>
@@ -92,7 +92,12 @@
             <a class="btn" href="https://2gis.ru/moscow/directions/points/%7C37.789684%2C55.643715%3B70000001119034161">Построить маршрут в 2ГИС</a>
           </div>
           <div class="visit-map">
-            <iframe title="Яндекс Карты — окрестности Car Doctor Club в Капотне" width="704" height="432" loading="lazy" referrerpolicy="no-referrer" src="https://yandex.ru/map-widget/v1/?ll=37.789684%2C55.643715&amp;pt=37.789684%2C55.643715&amp;z=17&amp;lang=ru_RU"></iframe>
+            <details class="map-disclosure" hidden>
+              <summary><span class="map-show">Показать карту</span><span class="map-hide">Свернуть карту</span></summary>
+              <template>
+                <iframe title="Яндекс Карты — окрестности Car Doctor Club в Капотне" width="704" height="432" referrerpolicy="no-referrer" src="https://yandex.ru/map-widget/v1/?ll=37.789684%2C55.643715&amp;pt=37.789684%2C55.643715&amp;z=17&amp;lang=ru_RU"></iframe>
+              </template>
+            </details>
             <a class="text-link" href="https://yandex.ru/maps/?rtext=~55.643715%2C37.789684&amp;rtt=auto">Открыть в Яндекс Картах</a>
           </div>
         </div>
@@ -132,5 +137,16 @@
     <a class="btn" href="tel:+79969676811">Позвонить</a>
     <a class="btn btn-secondary" href="https://2gis.ru/moscow/directions/points/%7C37.789684%2C55.643715%3B70000001119034161">Построить маршрут</a>
   </nav>
+  <script>
+    const mapDisclosure = document.querySelector('.map-disclosure');
+    const mapTemplate = mapDisclosure.querySelector('template');
+
+    mapDisclosure.addEventListener('toggle', function loadMap() {
+      if (!mapDisclosure.open) return;
+      mapTemplate.replaceWith(mapTemplate.content);
+      mapDisclosure.removeEventListener('toggle', loadMap);
+    });
+    mapDisclosure.hidden = false;
+  </script>
 </body>
 </html>
