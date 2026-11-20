@@ -93,7 +93,7 @@ section, footer { scroll-margin-block-start: 24px; }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; }
 .response-note { flex-basis: 100%; color: var(--muted); font-size: .875rem; }
 .bay-sign { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; width: 100%; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
-.bay-sign strong { padding: 2px 8px; border-radius: 4px; background: var(--surface); color: var(--ink); font-weight: 600; white-space: nowrap; }
+.bay-sign strong { padding: 2px 8px; border-radius: 4px; background: var(--surface); color: var(--lime); font-weight: 600; white-space: nowrap; }
 .photo { display: block; position: relative; overflow: hidden; border-radius: var(--r); background: var(--surface); }
 .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero__visual { aspect-ratio: 5 / 4; }
@@ -116,7 +116,7 @@ section, footer { scroll-margin-block-start: 24px; }
 .visit-bays { color: var(--accent); margin-block: 8px 16px; }
 .visit-details .btn { margin-top: 20px; }
 .visit-map iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
-.visit-map .text-link { margin-top: 4px; }
+.visit-map .text-link { margin-top: 4px; color: var(--lime); }
 
 .site-footer { padding-block: clamp(28px, 4vw, 48px) 16px; background: var(--footer-bg); color: var(--ink); }
 .footer-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--footer-line); }
