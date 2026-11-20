@@ -18,7 +18,7 @@
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="assets/motion/motion.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=polish">
   <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
   <script type="module" src="assets/motion/motion.js"></script>
 </head>
@@ -58,25 +58,27 @@
 
     <section class="section service-section" id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <h2 id="services-title">Услуги мастерской</h2>
         <div class="services-layout">
+          <div class="service-details">
+            <h2 id="services-title">Услуги мастерской</h2>
+            <ul class="service-list" role="list">
+              <li>Ремонт автомобилей<small>Ремонт легковых автомобилей</small></li>
+              <li>Ходовая часть<small>Ремонт подвески и ходовой части</small></li>
+              <li>Климатические системы<small>Обслуживание автомобильного кондиционера</small></li>
+              <li>Замена масла<small>Плановое обслуживание автомобиля</small></li>
+              <li>Мототехника<small>Ремонт и тюнинг</small></li>
+            </ul>
+          </div>
           <div class="service-photo photo"><img src="assets/service-960.webp" srcset="assets/service-640.webp 640w, assets/service-960.webp 960w" sizes="(max-width: 700px) 89vw, (max-width: 1600px) 43vw, 700px" width="960" height="720" loading="lazy" alt="Сине-жёлтый мотоцикл Honda в мастерской Car Doctor Club"></div>
-          <ul class="service-list">
-            <li>Ремонт автомобилей<small>Ремонт легковых автомобилей</small></li>
-            <li>Ходовая часть<small>Ремонт подвески и ходовой части</small></li>
-            <li>Климатические системы<small>Обслуживание автомобильного кондиционера</small></li>
-            <li>Замена масла<small>Плановое обслуживание автомобиля</small></li>
-            <li>Мототехника<small>Ремонт и тюнинг</small></li>
-          </ul>
         </div>
       </div>
     </section>
 
     <section class="section visit-section" id="visit" aria-labelledby="visit-title">
       <div class="wrap">
-        <h2 id="visit-title">Как проехать</h2>
         <div class="visit-layout">
           <div class="visit-details">
+            <h2 id="visit-title">Как проехать</h2>
             <address>Москва, ул. Капотня,<br>вл. 7, стр. 18</address>
             <p class="visit-bays">Боксы 23 и 24</p>
             <p>Ежедневно с 10:00 до 22:00<br>Перед визитом позвоните в сервис.</p>
