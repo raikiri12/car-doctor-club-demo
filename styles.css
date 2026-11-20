@@ -153,7 +153,7 @@ section, footer { scroll-margin-block-start: 24px; }
   .main-nav a { font-size: .875rem; }
   .header-phone { display: none; }
   .brand { gap: 8px; font-size: .75rem; }
-  .brand img { width: 34px; height: 34px; }
+  .brand-mark { width: 34px; height: 34px; }
   .hero-layout, .services-layout, .visit-layout, .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
   .hero__copy { gap: 12px; }
   .location { font-size: .875rem; }
@@ -183,7 +183,7 @@ section, footer { scroll-margin-block-start: 24px; }
   .header-inner { gap: 10px; }
   .main-nav { gap: 8px; }
   .main-nav a { font-size: .8125rem; }
-  .header-inner .brand img { width: 26px; height: 26px; }
+  .header-inner .brand-mark { width: 26px; height: 26px; }
   .mobile-actions .btn { font-size: .8125rem; }
 }
 @media (prefers-reduced-motion: reduce) {
